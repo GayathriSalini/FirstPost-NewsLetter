@@ -14,3 +14,4 @@ No frameworks, no complexity — just pure web basics! 🎨✨
 A quick and fun project to practice web fundamentals and share online.  
 
 ## 🌐 Live Demo
+[FirstPost-NewsLetter Website link](firstpost-newsletter.netlify.app)
