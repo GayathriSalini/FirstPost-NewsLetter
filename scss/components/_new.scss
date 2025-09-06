@@ -1,0 +1,58 @@
+@use '../util/functions' as u;
+
+.new {
+    background-color: var(--c-blue);
+    padding: u.rem(24), u.rem(20);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1.1rem; 
+
+    @media (width >= u.rem(1110)) {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+    &__title {
+        font-size: clamp(u.rem(32), 1.8239rem + 0.7511vw, u.rem(42));
+        color: var(--c-yellow);
+        padding-bottom: 0.5rem;
+        
+    
+    }
+
+
+    &__post {
+        padding-block-end: u.rem(30);
+        border-block-end: 1px solid var(--c-grey);
+
+        &last-child {
+            border: none;
+        }
+    }
+
+    &__headline {
+        margin-top: 1rem;
+        display: inline-block;
+         
+       
+    
+    }
+
+
+    &__headline a {
+        font-size: u.rem(20);
+        font-weight: 800;
+        margin-block-end: u.rem(8);
+        color: var(--c-white);
+        font-size: 1.09rem;
+        
+        &:hover {
+            color: var(--c-yellow);
+        }
+    }
+
+    &__description {
+        font-size: u.rem(15);
+        color: var(--c-silver);
+    }
+}
